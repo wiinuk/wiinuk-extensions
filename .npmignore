@@ -2,3 +2,5 @@
 lib/**/*.js.map
 src/
 test/
+tsconfig.json
+tsconfig.test.json

@@ -12,6 +12,8 @@
         "noUnusedParameters": true
     },
     "exclude": [
+        "lib",
+        "lib.test",
         "node_modules",
         "test"
     ]
