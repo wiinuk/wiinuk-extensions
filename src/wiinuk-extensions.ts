@@ -138,7 +138,7 @@ export namespace String {
             chars.push(char)
             i += char <= CodePoint.BmpMax ? 1 : 2
         }
-        return new Int32Array(chars)
+        return chars
     }
 }
 
