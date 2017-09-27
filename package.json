@@ -3,7 +3,7 @@
   "description": "wiinuk-extensions",
   "author": "wiinuk",
   "license": "MIT",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "repository": "wiinuk/wiinuk-extensions",
   "main": "./lib/wiinuk-extensions",
   "types": "./lib/wiinuk-extensions",
