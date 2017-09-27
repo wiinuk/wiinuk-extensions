@@ -116,10 +116,10 @@ export type Optional<T extends {} | null> = T | undefined
 
 export type Tuple1<T1> = [T1]
 export type Tuple2<T1, T2> = [T1, T2]
-export interface ReadonlyTuple1<T1> {
+export interface ReadonlyTuple1<T1> extends ReadonlyArray<mixed> {
     readonly 0: T1
 }
-export interface ReadonlyTuple2<T1, T2> {
+export interface ReadonlyTuple2<T1, T2> extends ReadonlyArray<mixed> {
     readonly 0: T1
     readonly 1: T2
 }
@@ -127,8 +127,13 @@ export interface ReadonlyTuple2<T1, T2> {
 export interface Array1<T> extends Tuple1<T>, Array<T> { }
 export interface Array2<T> extends Tuple2<T, T>, Array<T> { }
 
-export interface ReadonlyArray1<T> extends ReadonlyTuple1<T>, ReadonlyArray<T> { }
-export interface ReadonlyArray2<T> extends ReadonlyTuple2<T, T>, ReadonlyArray<T> { }
+export interface ReadonlyArray1<T> extends ReadonlyArray<T> {
+    readonly 0: T
+}
+export interface ReadonlyArray2<T> extends ReadonlyArray<T> {
+    readonly 0: T
+    readonly 1: T
+}
 
 export namespace String {
     export function codePoints(string: string) {

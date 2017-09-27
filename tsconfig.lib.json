@@ -4,9 +4,9 @@
         "module": "commonjs",
         "moduleResolution": "node",
         "declaration": true,
-        "sourceMap": true,
+        "sourceMap": false,
         "lib": ["es2016"],
-        "outDir": "lib.test",
+        "outDir": "lib",
         "strict": true,
         "noUnusedLocals": true,
         "noUnusedParameters": true
@@ -14,6 +14,7 @@
     "exclude": [
         "node_modules",
         "lib",
-        "lib.test"
+        "lib.test",
+        "test"
     ]
 }

@@ -6,15 +6,14 @@
         "declaration": true,
         "sourceMap": true,
         "lib": ["es2016"],
-        "outDir": "lib",
+        "outDir": "lib.test",
         "strict": true,
         "noUnusedLocals": true,
         "noUnusedParameters": true
     },
     "exclude": [
-        "lib",
-        "lib.test",
         "node_modules",
-        "test"
+        "lib",
+        "lib.test"
     ]
 }

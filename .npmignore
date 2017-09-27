@@ -1,5 +1,7 @@
+.vs/
 .vscode/
 lib/**/*.js.map
+lib.test/
 src/
 test/
 tsconfig.json
