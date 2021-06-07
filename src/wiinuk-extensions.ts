@@ -124,9 +124,6 @@ export interface ReadonlyTuple2<T1, T2> extends ReadonlyArray<mixed> {
     readonly 1: T2
 }
 
-export interface Array1<T> extends Tuple1<T>, Array<T> { }
-export interface Array2<T> extends Tuple2<T, T>, Array<T> { }
-
 export interface ReadonlyArray1<T> extends ReadonlyArray<T> {
     readonly 0: T
 }
